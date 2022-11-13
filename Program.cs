@@ -2,7 +2,7 @@
 string[] origArray = GetStringArray();
 int count = HowManyLessThanTreeLetters(origArray);
 //Console.WriteLine(count);
-string[] newArray = LessThanTreeLettersPartArray(origArray, count);
+string[] newArray = LessThanThreeLettersPartArray(origArray, count);
 Console.WriteLine($"[{String.Join(", ", origArray)}] -> [{String.Join(", ", newArray)}]");
 
 
@@ -34,7 +34,7 @@ int HowManyLessThanTreeLetters(string[] originArray)
     return count;
 }
 
-string[] LessThanTreeLettersPartArray(string[] originArray, int newLenght)
+string[] LessThanThreeLettersPartArray(string[] originArray, int newLenght)
 {
     string[] newPartArray = new string[newLenght];
     int k = 0;
